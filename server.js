@@ -54,6 +54,22 @@ server.delete('/videos/:id', async (request, reply) => {
 // })
 
 // DEPLOY
-server.listen({
-    port: process.env.PORT ?? 3333, 
-})
+// server.listen({
+//     port: process.env.PORT ?? 3333, 
+// })
+
+// Inicialização do servidor
+const startServer = async () => {
+    try {
+        await server.listen({
+            port: process.env.PORT ?? 3333,
+            host: '0.0.0.0',
+        });
+        console.log(`Servidor rodando em http://0.0.0.0:${process.env.PORT ?? 3333}`);
+    } catch (err) {
+        console.error('Erro ao iniciar o servidor:', err);
+        process.exit(1);
+    }
+};
+
+startServer();
