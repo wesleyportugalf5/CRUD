@@ -1,28 +1,32 @@
-POST http://localhost:3333/videos
+POST https://curso-nodejs-02.onrender.com/videos
+# POST http://localhost:3333/videos 
 Content-type: application/json
 
 {
-    "title": "Vídeo 03",
-    "description": "Esse é o terceiro video",
+    "title": "Vídeo 04",
+    "description": "Esse é o quarto video",
     "duration": 180
 }
 
 ###
 
-GET http://localhost:3333/videos
+GET https://curso-nodejs-02.onrender.com/videos
+# GET http://localhost:3333/videos
 
 ###
 
-PUT http://localhost:3333/videos/fb440668-8c64-4696-842c-85569d7366cb
+PUT https://curso-nodejs-02.onrender.com/videos/472771bf-9e94-4bc4-ab58-11d2468becbf
+# PUT http://localhost:3333/videos/fb440668-8c64-4696-842c-85569d7366cb
 Content-type: application/json
 
 {
-    "title": "Vídeo 01",
-    "description": "Esse é o primeiro vídeo",
+    "title": "Vídeo 100",
+    "description": "Esse é o 100 vídeo",
     "duration": 180
 }
 
 
 ###
 
-DELETE http://localhost:3333/videos/cb0676bf-2104-4233-93d9-5de872b3ccc0
+DELETE https://curso-nodejs-02.onrender.com/videos/472771bf-9e94-4bc4-ab58-11d2468becbf
+# DELETE http://localhost:3333/videos/cb0676bf-2104-4233-93d9-5de872b3ccc0
